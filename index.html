@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Write Text</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="https://laz-img-cdn.alicdn.com/tfs/TB1ODo.f2b2gK0jSZK9XXaEgFXa-64-64.png"
+    type="image/png" />
+  <link rel="stylesheet" href="1.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <p></p>
+</body>
+
+<script>
+  let container = document.querySelector("p");
+  const text = "#Chanllenger #day2 First Mini Project by Phạm Công &#128151"
+  let index = 0;
+  const writeText = () => {
+    index++;
+    container.innerHTML = text.slice(0, index);
+    if (index > text.length) {
+      index = 0;
+
+      console.log(index)
+    }
+  }
+  setInterval(writeText, 50);
+</script>
+
+</html>
